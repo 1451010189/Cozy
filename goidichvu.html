@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Doan Van Thuong" content="Demo Cozy Studio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>Gói Dịch Vụ Chụp Ảnh Cho Bé Yêu</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/wolf-animation.css">
+	<link rel="stylesheet" href="begin_css.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header >
+			<div class="background-language"></div>  <!--end bg lang -->
+				<section class="container">
+					<div id="header">
+					<!-- menu language -->
+						<div class="language">
+							<ul>
+								<li><a href="#" title="">English</a></li>
+								<li>Vietnamese</li>
+							</ul>
+						</div>
+						<div class="row menu-header clearfix">
+							<div class="col-sm-2">
+							<a href="index.html" title="">
+								<img src="images/cozy.png" style="width: 156.66px ; height: 107px;float: left">
+							</a>
+								
+							</div>						
+							<nav class="navbar-left col-sm-5 " style="float:left">
+								<ul>
+									<li><a href="in	dex.html" title="">TRANG CHỦ</a></li>
+									<li><a href="gallery.html" title="">ALBUM</a></li>
+									<li><a href="goidichvu.html" title="">GÓI DỊCH VỤ</a></li>
+									<li><a href="doitac.html" title="">ĐỐI TÁC</a></li>
+									<li><a href="khuyenmai.html" title="">KHUYẾN MÃI</a></li>
+									<li><a href="about.html" title="">CHÚNG TÔI</a></li>
+								</ul>
+							</nav>
+							<a href="#" title=""><span class="booking"></span></a>
+						</div>
+					</div> <!-- end navbar -->
+				</section>					
+	    </header><!-- end header -->
+	    <div id="main" style=" margin-top: 30px;">
+	    	<div class="container" style="background-color: #fff">
+	    		<div class="row">
+	    			<div class="col-md-12">	    				
+	    				<img src="images/dichvu.jpg" class="hang1">	    				
+	    			</div> 
+	    		</div>
+	    		<div class="row hang2" >
+	    			<div class="col-md-4 "><img src="images/LE.jpg"></div>			    			
+	    			<div class="col-md-4 "><img src="images/LE2.jpg"></div>		    			
+	    			<div class="col-md-4 "><img src="images/LE3.jpg"></div>		   
+	    		</div>
+	    		<div class="row hang3">
+	    			<div class="col-md-4 "><img src="images/CHOI1.jpg"></div>
+    				<div class="col-md-4 "><img src="images/HAT.jpg"></div>
+	    			<div class="col-md-4 "><img src="images/HAT2.jpg"></div>	    			
+	    		</div>
+	    		<div class="row hang4"><img src="images/pre-style.jpg"></div>			    		
+	    		<div class="row hang5">
+	    			<div class="col-md-4 "><img src="images/CHOI1.jpg"></div>	    			
+	    			<div class="col-md-4 "><img src="images/HAT.jpg"></div>	    				
+	    			<div class="col-md-4 "><img src="images/HAT2.jpg"></div>	    			
+	    		</div>
+	    		<div class="row" style="margin-top: 40px;">
+	    			<span class="lienhe"><h4>Liên Hệ</h4></span>
+	    			<span class="lienhe"><h4>Tel:(08) 62959333</h4></span>
+	    			<span class="lienhe"><h4>Hotline: 097 678 3133</h4></span>
+	    			<span class="lienhe"><h4>E-mail: mailbox@cozystudio.net</h4></span>
+	    			<span class="lienhe"><h4>Add: 10 Nguyễn Hiền, P4, Q3, TPHCM</h4></span>
+	    		</div>	    				    		
+	    	</div>
+	    </div> <!-- end main content -->
+	    <footer style="margin-top: 20px;background-color: #fff">
+			<div class="container">
+				<div class="col-md-4 footer-nav-left">
+					<nav>
+						<ul>
+							<li><a href="" title="">Help</a></li>
+							<li><a href="" title="">Privacy</a></li>
+							<li><a href="" title="">Chúng tôi</a></li>
+							<li><a href="" title="">Liên hệ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-8">
+					<span style="text-align: center;font-size: 11px">Cozy Studio</span>
+					<p style="font-size: 11px">10 Nguyễn Hiền, P4, Q3, TPHCM Ho Chi Minh Asia70000 Viet Nam</p>
+					<p style="font-size: 11px">All Rights Reserved - Designed by <a href="#" title="">Agilsun</a>
+					Copyright © 2013 <a href="3" title="">Cozy Studio.</a>
+					</p>
+				</div>	
+			</div>
+		</footer> <!-- end footer -->
+	</div> <!-- end website -->
+
+	<!-- Jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".hang2 ").hide(); // load lên ẩn hàng 2 
+			 $(".hang3").hide();   //ẩn hàng 3
+			 $(".hang5").hide();   //ẩn hàng 5
+			$(".hang1").click(function(){  //click vô hàng 1
+				$(".hang2").toggle();	  	//show hang 2
+				//kiểm tra nếu hàng 3 bật luôn thì đóng luôn ngược lại thì thôi
+				if ($(".hang3").show()) {
+					$(".hang3").hide();
+				}	
+			});
+			$(".hang2").click(function(){    //click vô hàng 2
+				$(this).css("opacity","0.8");  
+				$(".hang3").toggle();			//show hàng 3
+			});
+			$(".hang4").click(function(){    //click vô hàng 4
+				
+				$(".hang5").toggle();			//show hàng 5
+			});
+		});
+	</script>
+</body>
+</html>
