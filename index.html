@@ -15,11 +15,12 @@
 	<link rel="stylesheet" type="text/css" href="css/wolf-animation.css">
 	<link rel="stylesheet" href="begin_css.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <!-- Jquery -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="icon" href="http://cozystudio.net/wp-content/themes/cozystudio/favicon.ico" type="image/x-icon" />
+	<!-- Jquery -->
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
 </head>
@@ -29,7 +30,7 @@
 			<div class="background-language"></div>  <!--end bg lang -->
 			<section class="container">
 				<div id="header">
-				<!-- menu language -->
+					<!-- menu language -->
 					<div class="language">
 						<ul>
 							<li><a href="#" title="">English</a></li>
@@ -38,19 +39,26 @@
 					</div>
 					<div class="row menu-header clearfix">
 						<div class="col-sm-2">
-						<a href="index.html" title="">
-							<img src="images/cozy.png" style="width: 156.66px ; height: 107px;float: left">
-						</a>
+							<a href="index.html" title="">
+								<img src="images/cozy.png" style="width: 156.66px ; height: 107px;float: left">
+							</a>
 							
 						</div>						
-						<nav class="navbar-left col-sm-5 " style="float:left">
+						<nav class="navbar-left col-sm-5 col-sx-12" style="float:left">
+
 							<ul>
 								<li><a href="index.html" title="">TRANG CHỦ</a></li>
 								<li><a href="gallery.html" title="">ALBUM</a></li>
 								<li><a href="goidichvu.html" title="">GÓI DỊCH VỤ</a></li>
 								<li><a href="doitac.html" title="">ĐỐI TÁC</a></li>
 								<li><a href="khuyenmai.html" title="">KHUYẾN MÃI</a></li>
-								<li><a href="about.html" title="">CHÚNG TÔI</a></li>
+								<li onmouseover="showitem()" onmouseout="hideitem()"><a href="about.html" title="">CHÚNG TÔI</a>
+									
+                                           <li class="sub-menu" style="background-color: #fff">
+                                                <a href="new-info.html">Thông tin mới</a>
+                                           </li>
+                                   
+								</li>
 							</ul>
 						</nav>
 						<a href="#" title=""><span class="booking"></span></a>
@@ -59,66 +67,66 @@
 			</section>	
 		</header><!-- end header -->
 		<div id="main">
-		 <!-- slider -->
+			<!-- slider -->
 			<section class="container">
 				<div class="slider">
 					<div class="banner">
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="1000"> 
-						<!-- data-interval="1000" : thời gian qua slide -->
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators" data-interval="500">
-							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-							  </ol>
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner">
-								  <div class="item active">
-								      <img src="images/1.jpg" alt="...">
-								      <div class="carousel-caption"></div>							 
-								  </div>
-								  <div class="item">
-								      <img src="images/2.jpg" alt="...">
-								 	  <div class="carousel-caption"> </div>							     
-								  </div>
-								  <div class="item">
-								      <img src="images/3.jpg" alt="...">
-								      <div class="carousel-caption"></div>			     				   
-								  </div>
-								  <div class="item">
-								      <img src="images/4.jpg" alt="...">
-								      <div class="carousel-caption"></div>							      
-								  </div>
-								  <div class="item">
-								      <img src="images/5.jpg" alt="...">
-								      <div class="carousel-caption"></div>
-								  </div>
-								  <div class="item">
-								      <img src="images/6.jpg" alt="...">
-								      <div class="carousel-caption"></div>
-								  </div>
-								  <div class="item">
-								      <img src="images/7.jpg" alt="...">
-								      <div class="carousel-caption"></div>
-								  </div>
-								  <div class="item">
-								      <img src="images/8.jpg" alt="...">
-								      <div class="carousel-caption"></div>
-								  </div>
-							  </div>
-								
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left"></span>
-							  </a>
-							  <a class="right carousel-control" href="#carousel-example-generic" role="			button" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right"></span>
-							  </a>
+							<!-- data-interval="1000" : thời gian qua slide -->
+							<!-- Indicators -->
+							<ol class="carousel-indicators" data-interval="500">
+								<li data-target="#carousel-example-generic" data-slide-to="0"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="7" class="active"></li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/1.jpg" alt="...">
+									<div class="carousel-caption"></div>							 
+								</div>
+								<div class="item">
+									<img src="images/2.jpg" alt="...">
+									<div class="carousel-caption"> </div>							     
+								</div>
+								<div class="item">
+									<img src="images/3.jpg" alt="...">
+									<div class="carousel-caption"></div>			     				   
+								</div>
+								<div class="item">
+									<img src="images/4.jpg" alt="...">
+									<div class="carousel-caption"></div>							      
+								</div>
+								<div class="item">
+									<img src="images/5.jpg" alt="...">
+									<div class="carousel-caption"></div>
+								</div>
+								<div class="item">
+									<img src="images/6.jpg" alt="...">
+									<div class="carousel-caption"></div>
+								</div>
+								<div class="item">
+									<img src="images/7.jpg" alt="...">
+									<div class="carousel-caption"></div>
+								</div>
+								<div class="item">
+									<img src="images/8.jpg" alt="...">
+									<div class="carousel-caption"></div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="			button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
 						</div>
 					</div>
 					<div class="row promotion ">  
@@ -133,7 +141,7 @@
 
 			<section class="container social-bar">
 				<ul>
-					<li> <a href="#" title=""> <span style="color:blue;padding-right: 4px;">Find us</span><img src="images/fb.png"> </a></li>
+					<li> <a href="#" title=""> <span style="color:blue;padding-left: 4px;">Find us</span><img src="images/fb.png"> </a></li>
 					<li> <a href="#" title=""> <span style="color:red;padding-right: 4px;">Follow us</span><img src="images/google.png"> </a></li>
 					<li> <a href="#" title=""><span style="color:#B22222;padding-right: 4px;">Follow us</span> <img src="images/instagram.png"> </a></li>
 				</ul>
@@ -147,10 +155,10 @@
 					<ul class="list-package">
 						<li class="row post-content clearfix">
 							<div class="col-md-4 img-post" >
-							<span class="sprite"></span>
-								<img src="images/img-post1.jpg">
+								<span class="sprite"></span>
+								<img  class="img-responsive" src="images/img-post1.jpg">
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-8 col-xs-12">
 								<div class="header-post">
 									<a href="#" title=""> Băng đô – Phụ kiện không thể thiếu khi chụp ảnh cho bé gái</a>
 								</div>
@@ -161,10 +169,10 @@
 						</li>
 						<li class="row post-content clearfix">
 							<div class="col-md-4 img-post" >
-							<span class="sprite"></span>
-								<img src="images/img-post1.jpg">
+								<span class="sprite"></span>
+								<img class="img-responsive" src="images/img-post1.jpg">
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-8 col-xs-12" >
 								<div class="header-post">
 									<a href="#" title=""> Băng đô – Phụ kiện không thể thiếu khi chụp ảnh cho bé gái</a>
 								</div>
@@ -175,10 +183,10 @@
 						</li>
 						<li class="row post-content clearfix">
 							<div class="col-md-4 img-post" >
-							<span class="sprite"></span>
-								<img src="images/img-post1.jpg">
+								<span class="sprite"></span>
+								<img class="img-responsive" src="images/img-post1.jpg">
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-8 col-xs-12">
 								<div class="header-post">
 									<a href="#" title=""> Băng đô – Phụ kiện không thể thiếu khi chụp ảnh cho bé gái</a>
 								</div>
@@ -189,10 +197,10 @@
 						</li>						
 						<li class="row post-content clearfix">
 							<div class="col-md-4 img-post" >
-							<span class="sprite"></span>
-								<img src="images/img-post1.jpg">
+								<span class="sprite"></span>
+								<img class="img-responsive" src="images/img-post1.jpg">
 							</div>
-							<div class="col-md-8">
+							<div class="col-md-8 col-xs-12">
 								<div class="header-post">
 									<a href="#" title=""> Băng đô – Phụ kiện không thể thiếu khi chụp ảnh cho bé gái</a>
 								</div>
@@ -203,13 +211,13 @@
 						</li>
 					</ul>
 					<ul class="pagination" style="padding-left: 45px">
-					  <li class="disabled">  <a href="#">Page 1 of 12</a></li>
-					  <li><a href="#">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					  <li><a href="#">&raquo;</a></li>
+						<li class="">  <a href="#">Page 1 of 12</a></li>
+						<li><a href="#">1</a></li>
+						<li class="disabled"><a href="#">..</a></li>
+						<li><a href="#">10</a></li>
+						<li class="disabled"><a href="#">&raquo;</a></li>
+						<li><a href="#">last &raquo;</a></li>
+						
 					</ul>
 				</article> 				
 			</section>
@@ -228,10 +236,10 @@
 					</nav>
 				</div>
 				<div class="col-md-8">
-					<span style="text-align: center;font-size: 11px">Cozy Studio</span>
-					<p style="font-size: 11px">10 Nguyễn Hiền, P4, Q3, TPHCM Ho Chi Minh Asia70000 Viet Nam</p>
+					<span style="float: left: left;font-size: 11px">Cozy Studio</span>
+					<span style="font-size: 11px ">10 Nguyễn Hiền, P4, Q3, TPHCM Ho Chi Minh Asia70000 Viet Nam</span>
 					<p style="font-size: 11px">All Rights Reserved - Designed by <a href="#" title="">Agilsun</a>
-					Copyright © 2013 <a href="3" title="">Cozy Studio.</a>
+						Copyright © 2013 <a href="3" title="">Cozy Studio.</a>
 					</p>
 				</div>	
 			</div>
@@ -239,8 +247,17 @@
 		<div class="background-language"></div>
 	</div>  <!-- end container website -->
 	<script>
-		$('.carousel').carousel(7) 
+		$('.carousel').carousel(0) 
 		// dịch chuyển qua ảnh thứ 7
 	</script>
+	 <script>
+        function showitem() {
+            $('.sub-menu').show();
+        }
+
+        function hideitem() {
+            $('.sub-menu').hide();
+        }
+    </script>
 </body>
 </html>
